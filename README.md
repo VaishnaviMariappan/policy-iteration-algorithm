@@ -29,7 +29,6 @@ To reach state 7 (Goal) : +1 otherwise : 0
 
 
 ## POLICY ITERATION ALGORITHM:
-The algorithm implemented in the policy_iteration is a method used to find the optimal policy in a Markov decision process (MDP). Here's a step-by-step explanation of the algorithm:
 
 1. Initialize the policy pi with a random action on each state. The initial policy is represented by the lambda function pi=lambda s:{s:a for s,a in enumerate(random_actions)}[s], where random_actions is a list of randomly chosen actions for each state.
 
@@ -45,7 +44,6 @@ The algorithm implemented in the policy_iteration is a method used to find the o
 
 7. Return the final state-values V and the optimal policy pi.
 
-To summarize, policy iteration iteratively improves the policy by alternating between policy evaluation and policy improvement steps until convergence is reached. The algorithm guarantees to find the optimal policy for the given MDP P with a discount factor gamma.
 ## POLICY IMPROVEMENT FUNCTION
 ```python
 def policy_improvement(V, P, gamma=1.0):
